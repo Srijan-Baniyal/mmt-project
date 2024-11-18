@@ -1,3 +1,4 @@
+
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
@@ -9,11 +10,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "air.png",
+        img: "images/air.png",
       },
       {
         code: "darkblue",
-        img: "air2.png",
+        img: "images/air2.png",
       },
     ],
   },
@@ -23,12 +24,12 @@ const products = [
     price: 13999,
     colors: [
       {
-        code: "lightgray",
-        img: "jordan.png",
+        code: "lightgrey",
+        img: "images/jordan.png",
       },
       {
         code: "green",
-        img: "jordan2.png",
+        img: "images/jordan2.png",
       },
     ],
   },
@@ -38,12 +39,12 @@ const products = [
     price: 9999,
     colors: [
       {
-        code: "lightgray",
-        img: "blazer.png",
+        code: "lightgrey",
+        img: "images/blazer.png",
       },
       {
         code: "green",
-        img: "blazer2.png",
+        img: "images/blazer2.png",
       },
     ],
   },
@@ -54,11 +55,11 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "crater.png",
+        img: "images/crater.png",
       },
       {
-        code: "lightgray",
-        img: "crater2.png",
+        code: "lightgrey",
+        img: "images/crater2.png",
       },
     ],
   },
@@ -69,17 +70,17 @@ const products = [
     colors: [
       {
         code: "gray",
-        img: "hippie.png",
+        img: "images/hippie.png",
       },
       {
         code: "black",
-        img: "hippie2.png",
+        img: "images  /hippie2.png",
       },
     ],
   },
 ];
 
-let choosenProduct = products[0];
+let chosenProduct = products[0];
 
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
@@ -91,21 +92,21 @@ menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
-    choosenProduct = products[index];
+    chosenProduct = products[index];
 
-    currentProductTitle.textContent = choosenProduct.title;
-    currentProductPrice.textContent = "INR " + choosenProduct.price;
-    currentProductImg.src = choosenProduct.colors[0].img;
+    currentProductTitle.textContent = chosenProduct.title;
+    currentProductPrice.textContent = "INR " + chosenProduct.price;
+    currentProductImg.src = chosenProduct.colors[0].img;
 
     currentProductColors.forEach((color, index) => {
-      color.style.backgroundColor = choosenProduct.colors[index].code;
+      color.style.backgroundColor = chosenProduct.colors[index].code;
     });
   });
 });
 
 currentProductColors.forEach((color, index) => {
   color.addEventListener("click", () => {
-    currentProductImg.src = choosenProduct.colors[index].img;
+    currentProductImg.src = chosenProduct.colors[index].img;
   });
 });
 
