@@ -1,236 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<title>Sneakers Store</title>
-</head>
-<body>
-<nav>
-<div class="navTop">
-<div class="navItem">
-<h1><b><i>THE SNEAKER HUB</i></b></h1>
-</div>
-<div class="navItem">
-<div class="search">
-<input type="text" placeholder="Search" class="searchInput">
-<img src="images/search.png" alt="" class="searchIcon" width=25px height=25px>
-</div>
-</div>
-</div>
-<div class="navBottom">
-<h3 class="menuItem">AIR FORCE</h3>
-<h3 class="menuItem">JORDAN</h3>
-<h3 class="menuItem">BLAZER</h3>
-<h3 class="menuItem">CRATER</h3>
-<h3 class="menuItem">HIPPIE</h3>
-</div>
-</nav>
-<div class="slider">
-<div class="sliderWrapper">
-<div class="sliderItem">
-<img src="images/air.png" alt="" class="sliderImage">
-<div class="sliderBg"></div>
-<h1 class="sliderTitle">AIR FORCE<br>NEW<br>SEASON</h1>
-<h1 class="sliderPrice">INR 10999</h2>
-<a href="#product">
-<button class="buyButton">BUY NOW</button></a>
-</div>
-<div class="sliderItem">
-<img src="images/jordan.png" alt="" class="sliderImage">
-<div class="sliderBg"></div>
-<h1 class="sliderTitle">AIR JORDAN<br>NEW<br>SEASON<br></h1>
-<h1 class="sliderPrice">INR 13999</h2>
-<a href="#product">
-<button class="buyButton">BUY NOW</button></a>
-</div>
-<div class="sliderItem">
-<img src="images/blazer.png" alt="" class="sliderImage">
-<div class="sliderBg"></div>
-<h1 class="sliderTitle">NIKE<br>VINTAGE<br>BLAZER</h1>
-<h1 class="sliderPrice">INR 9999</h2>
-<a href="#product">
-<button class="buyButton">BUY NOW</button></a>
-</div>
-<div class="sliderItem">
-<img src="images/crater.png" alt="" class="sliderImage">
-<div class="sliderBg"></div>
-<h1 class="sliderTitle">NIKE<br>CRATER<br>IMPACT</h1>
-<h1 class="sliderPrice">INR 8999</h2>
-<a href="#product">
-<button class="buyButton">BUY NOW</button></a>
-</div>
-<div class="sliderItem">
-<img src="images/hippie.png" alt="" class="sliderImage">
-<div class="sliderBg"></div>
-<h1 class="sliderTitle">NIKE<br>SPACE<br>HIPPIE</h1>
-<h1 class="sliderPrice">INR 8999</h2>
-<a href="#product">
-<button class="buyButton">BUY NOW</button></a>
-</div>
-</div>
-</div>
-<div class="features">
-<div class="feature">
-<img src="images/shipping.png" alt="" class="featureIcon">
-<span class="featureTitle">FREE SHIPPING</span>
-<span class="featureDesc">Free worldwide shipping on all orders.</span>
-</div>
-<div class="feature">
-<img class="featureIcon" src="images/return.png" alt="" >
-<span class="featureTitle">10 DAYS RETURN</span>
-<span class="featureDesc">No question return and easy refund in 10 days.</span>
-</div>
-<div class="feature">
-<img class="featureIcon" src="images/gift.png" alt="" >
-<span class="featureTitle">GIFT CARDS</span>
-<span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
-</div>
-<div class="feature">
-<img class="featureIcon" src="images/contact.png" alt="" >
-<span class="featureTitle">CONTACT US!</span>
-<span class="featureDesc">Keep in touch via email and support system.</span>
-</div>
-</div>
-<div class="product" id="product">
-<img src="images/air.png" alt="" class="productImg">
-<div class="productDetails">
-  <h1 class="productTitle">AIR FORCE</h1>
-  <h2 class="productPrice">INR 10999</h2>
-  <p class="productDesc"></p>
-<div class="colors">
-<div class="color"></div>
-<div class="color"></div>
-</div>
-<div class="sizes">
-<div class="size">UK7</div>
-<div class="size">UK8</div>
-<div class="size">UK9</div>
-<div class="size">UK10</div>
-<div class="size">UK11</div>
-</div>
-<button class="productButton">BUY NOW!</button>
-</div>
-<div class="payment" id="hidden">
-    <h1 class="payTitle">Personal Information</h1>
-    <label>FULL NAME:</label>
-    <input type="text" class="payInput">
-    <label>Phone Number</label>
-    <input type="tel" placeholder="+91" class="payInput" maxlength="10">
-    <label>Address</label>
-    <textarea rows="3" cols="20"></textarea> 
-  
-    <h1 class="payTitle">Card Information</h1>
-    <div class="cardIcons">
-      <img src="images/visa.png" width="40" alt="" class="cardIcon">
-      <img src="images/master.png" alt="" width="40" class="cardIcon">
-    </div>
-    <input type="password" class="payInput" placeholder="Card Number" maxlength="16">
-    
-    <div class="cardInfo">
-      <input type="text" placeholder="MM" maxlength="2" class="payInput sm">
-      <input type="text" placeholder="YY" maxlength="2" class="payInput sm">
-      <input type="password" placeholder="CVV" maxlength="3" class="payInput sm">
-    </div>
-  
-    <button class="payButton">Pay Now</button>
-    <span class="close">X</span>
-  </div>
-  
-<div class="gallery">
-<div class="galleryItem">
-  <h1 class="galleryTitle">STAND OUT!</h1>
-  <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-      alt="" class="galleryImg">
-</div>
-<div class="galleryItem">
-  <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-      alt="" class="galleryImg">
-  <h1 class="galleryTitle">Step Up Your Game with Exclusive Sneakers</h1>
-</div>
-<div class="galleryItem">
-  <h1 class="galleryTitle">Find Your Perfect Fit</h1>
-  <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-      alt="" class="galleryImg">
-</div>
-</div>
-<div class="newSeason">
-<div class="nsItem">
-  <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-      alt="" class="nsImg">
-</div>
-<div class="nsItem">
-  <h1 class="nsTitle">New Season</h1>
-  <h1 class="nsTitle">New Collection</h1>
-  <a href="#nav">
-      <button class="nsButton">CHOOSE YOUR STYLE</button>
-  </a>
-</div>
-<div class="nsItem">
-  <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-      alt="" class="nsImg">
-</div>
-</div>
-<footer>
-<div class="footerLeft">
-  <div class="footerMenu">
-      <h1 class="fMenuTitle">About Us</h1>
-      <ul class="fList">
-          <li class="fListItem">Company</li>
-          <li class="fListItem">Contact</li>
-          <li class="fListItem">Careers</li>
-          <li class="fListItem">Affiliates</li>
-          <li class="fListItem">Stores</li>
-      </ul>
-  </div>
-  <div class="footerMenu">
-      <h1 class="fMenuTitle">Useful Links</h1>
-      <ul class="fList">
-          <li class="fListItem">Support</li>
-          <li class="fListItem">Refund</li>
-          <li class="fListItem">FAQ</li>
-          <li class="fListItem">Feedback</li>
-          <li class="fListItem">Stories</li>
-      </ul>
-  </div>
-  <div class="footerMenu">
-      <h1 class="fMenuTitle">Products</h1>
-      <ul class="fList">
-          <li class="fListItem">Air Force</li>
-          <li class="fListItem">Air Jordan</li>
-          <li class="fListItem">Blazer</li>
-          <li class="fListItem">Crater</li>
-          <li class="fListItem">Hippie</li>
-      </ul>
-  </div>
-</div>
-<div class="footerRight">
-    <div class="footerRightMenu">
-        <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
-        <div class="fMail">
-            <input type="text" placeholder="your@email.com" class="fInput">
-            <button class="fButton">Join!</button>
-        </div>
-    </div>
-  
-  
-  <div class="footerRightMenu">
-      <h1 class="fMenuTitle">Follow Us</h1>
-      <div class="fIcons">
-          <img src="images/facebook.png" alt="" class="fIcon">
-          <img src="images/twitter.png" alt="" class="fIcon">
-          <img src="images/instagram.png" alt="" class="fIcon">
-          <img src="images/whatsapp.png" alt="" class="fIcon">
-      </div>
-  </div>
-  <div class="footerRightMenu">
-      <span class="copyright"></span>
-  </div>
-</div>
-</footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Sneaker Store</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-<script src="script.js"></script>
-</body>
+      :root {
+        --primary: #ff4141;
+        --secondary: #1e1e1e;
+        --background: #f4f4f4;
+        --text: #333333;
+        --accent: #ffd700;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--text);
+        overflow-x: hidden;
+      }
+
+      nav {
+        background-color: var(--secondary);
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        transition: all 0.3s ease;
+      }
+
+      nav.scrolled {
+        background-color: rgba(30, 30, 30, 0.9);
+        padding: 0.5rem 1rem;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: scale(1.05);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary);
+        transform: translateY(-2px);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--primary);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      .nav-links a:hover::after {
+        transform: scaleX(1);
+      }
+
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("/images/lmmk.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, var(--primary), var(--accent));
+        opacity: 0.3;
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: var(--primary);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-button:hover {
+        background-color: var(--accent);
+        color: var(--secondary);
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .cta-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: all 0.5s;
+      }
+
+      .cta-button:hover::before {
+        left: 100%;
+      }
+
+      .products {
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .product-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        animation: fadeIn 0.5s ease-out;
+      }
+
+      .product-card:hover {
+        transform: translateY(-10px) rotate(2deg);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .product-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: all 0.3s ease;
+      }
+
+      .product-card:hover .product-image {
+        transform: scale(1.1);
+      }
+
+      .product-info {
+        padding: 1.5rem;
+      }
+
+      .product-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--secondary);
+      }
+
+      .product-price {
+        color: var(--primary);
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      .add-to-cart {
+        background-color: var(--secondary);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100%;
+        transition: all 0.3s ease;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .add-to-cart:hover {
+        background-color: var(--primary);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .video-section {
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 2rem;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+      }
+
+      .video-container:hover iframe {
+        transform: scale(1.02);
+      }
+
+      .cart-icon {
+        position: relative;
+        cursor: pointer;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .cart-icon:hover {
+        transform: scale(1.1);
+      }
+
+      .cart-count {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        transition: all 0.3s ease;
+      }
+
+      .cart-modal {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 400px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 1000;
+      }
+
+      .cart-modal.open {
+        right: 0;
+      }
+
+      .cart-header {
+        padding: 1.5rem;
+        background-color: var(--secondary);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .cart-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .cart-close {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .cart-close:hover {
+        color: var(--primary);
+        transform: scale(1.1);
+      }
+
+      .cart-items {
+        padding: 1.5rem;
+        overflow-y: auto;
+        max-height: calc(100vh - 250px);
+      }
+
+      .cart-item {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      .cart-item img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .cart-item-info h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .cart-item-price {
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      .cart-total {
+        padding: 1.5rem;
+        border-top: 1px solid #eee;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+      }
+
+      .cart-total p {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .checkout-btn {
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 1rem;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .checkout-btn:hover {
+        background-color: var(--accent);
+        color: var(--secondary);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .cart-modal {
+          width: 100%;
+          right: -100%;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1.2rem;
+        }
+
+        .products {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo">SNEAKER STORE</a>
+        <div class="nav-links">
+          <a href="#products">Products</a>
+          <a href="#video">Featured</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="cart-icon" onclick="toggleCart()">
+          🛒
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Step into Style</h1>
+        <p>Discover our collection of premium sneakers</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <!-- Products will be dynamically inserted here -->
+    </section>
+
+    <section id="video" class="video-section">
+      <div class="video-container">
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/lCIolidS9SY"
+          title="How Nike shoes are made in the Factory || Why Nike Shoes are so Expensive?"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="cart-close" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <div class="cart-total">
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button class="checkout-btn" onclick="checkout()">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const products = [
+        { id: 1, name: "Air Max", price: 129.99, image: "/images/air.png" },
+        { id: 2, name: "Blazer", price: 99.99, image: "/images/blazer.png" },
+        { id: 3, name: "Crater", price: 89.99, image: "/images/crater.png" },
+        { id: 4, name: "Jordan", price: 199.99, image: "/images/jordan.png" },
+        { id: 5, name: "Hippie", price: 79.99, image: "/images/hippie.png" },
+        { id: 6, name: "Air Max 2", price: 139.99, image: "/images/air2.png" },
+        {
+          id: 7,
+          name: "Blazer 2",
+          price: 109.99,
+          image: "/images/blazer2.png",
+        },
+        { id: 8, name: "Crater 2", price: 99.99, image: "/images/crater2.png" },
+      ];
+
+      let cart = [];
+
+      function renderProducts() {
+        const productsContainer = document.querySelector(".products");
+        productsContainer.innerHTML = products
+          .map(
+            (product, index) => `
+                <div class="product-card" style="animation-delay: ${
+                  index * 0.1
+                }s">
+                    <img src="${product.image}" alt="${
+              product.name
+            }" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-price">$${product.price.toFixed(
+                          2
+                        )}</p>
+                        <button class="add-to-cart" onclick="addToCart(${
+                          product.id
+                        })">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      function addToCart(productId) {
+        const product = products.find((p) => p.id === productId);
+        cart.push(product);
+        updateCartCount();
+        renderCart();
+        animateCartIcon();
+      }
+
+      function updateCartCount() {
+        const cartCount = document.querySelector(".cart-count");
+        cartCount.textContent = cart.length;
+        cartCount.style.transform = "scale(1.2)";
+        setTimeout(() => (cartCount.style.transform = "scale(1)"), 300);
+      }
+
+      function renderCart() {
+        const cartItems = document.querySelector(".cart-items");
+        cartItems.innerHTML = cart
+          .map(
+            (item, index) => `
+                <div class="cart-item" style="animation-delay: ${index * 0.1}s">
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="cart-item-info">
+                        <h3>${item.name}</h3>
+                        <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+                    </div>
+                </div>
+            `
+          )
+          .join("");
+
+        const total = cart.reduce((sum, item) => sum + item.price, 0);
+        document.getElementById("cart-total").textContent = total.toFixed(2);
+      }
+
+      function toggleCart() {
+        document.querySelector(".cart-modal").classList.toggle("open");
+      }
+
+      function checkout() {
+        if (cart.length === 0) {
+          alert("Your cart is empty!");
+          return;
+        }
+        alert("Thank you for your purchase!");
+        cart = [];
+        updateCartCount();
+        renderCart();
+        toggleCart();
+      }
+
+      function animateCartIcon() {
+        const cartIcon = document.querySelector(".cart-icon");
+        cartIcon.style.transform = "scale(1.2) rotate(10deg)";
+        setTimeout(
+          () => (cartIcon.style.transform = "scale(1) rotate(0deg)"),
+          300
+        );
+      }
+
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 100) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      renderProducts();
+    </script>
+  </body>
 </html>
