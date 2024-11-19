@@ -484,7 +484,6 @@
         </div>
       </div>
     </nav>
-
     <section class="hero">
       <div class="hero-content">
         <h1>Step into Style</h1>
@@ -492,11 +491,8 @@
         <a href="#products" class="cta-button">Shop Now</a>
       </div>
     </section>
-
     <section id="products" class="products">
-      <!-- Products will be dynamically inserted here -->
     </section>
-
     <section id="video" class="video-section">
       <div class="video-container">
         <iframe
@@ -505,20 +501,18 @@
           src="https://www.youtube.com/embed/lCIolidS9SY"
           title="How Nike shoes are made in the Factory || Why Nike Shoes are so Expensive?"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer;autoplay;encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
       </div>
     </section>
-
     <div class="cart-modal">
       <div class="cart-header">
         <h2>Your Cart</h2>
         <button class="cart-close" onclick="toggleCart()">✕</button>
       </div>
       <div class="cart-items">
-        <!-- Cart items will be dynamically inserted here -->
       </div>
       <div class="cart-total">
         <p>Total: $<span id="cart-total">0</span></p>
@@ -527,7 +521,6 @@
         </button>
       </div>
     </div>
-
     <script>
       const products = [
         { id: 1, name: "Air Max", price: 129.99, image: "/images/air.png" },
@@ -544,9 +537,7 @@
         },
         { id: 8, name: "Crater 2", price: 99.99, image: "/images/crater2.png" },
       ];
-
       let cart = [];
-
       function renderProducts() {
         const productsContainer = document.querySelector(".products");
         productsContainer.innerHTML = products
@@ -574,7 +565,6 @@
           )
           .join("");
       }
-
       function addToCart(productId) {
         const product = products.find((p) => p.id === productId);
         cart.push(product);
@@ -582,14 +572,12 @@
         renderCart();
         animateCartIcon();
       }
-
       function updateCartCount() {
         const cartCount = document.querySelector(".cart-count");
         cartCount.textContent = cart.length;
         cartCount.style.transform = "scale(1.2)";
         setTimeout(() => (cartCount.style.transform = "scale(1)"), 300);
       }
-
       function renderCart() {
         const cartItems = document.querySelector(".cart-items");
         cartItems.innerHTML = cart
