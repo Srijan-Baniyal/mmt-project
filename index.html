@@ -467,6 +467,24 @@
           padding: 1rem;
         }
       }
+
+      footer {
+        background-color: var(--secondary);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      footer p {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      footer p:last-child {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #999;
+      }
     </style>
   </head>
   <body>
@@ -476,7 +494,7 @@
         <div class="nav-links">
           <a href="#products">Products</a>
           <a href="#video">Featured</a>
-          <a href="#contact">Contact</a>
+          <a href="contactus.html">Contact</a>
         </div>
         <div class="cart-icon" onclick="toggleCart()">
           🛒
@@ -521,6 +539,10 @@
         </button>
       </div>
     </div>
+    <footer>
+      <p>&copy; 2023 Ultimate Sneaker Store. All rights reserved.</p>
+      <p>Video credit: "How Nike shoes are made in the Factory || Why Nike Shoes are so Expensive?" by Insider Business</p>
+    </footer>
     <script>
       const products = [
         { id: 1, name: "Air Max", price: 129.99, image: "/images/air.png" },
